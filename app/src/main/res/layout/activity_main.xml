@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amountInput"
+        />
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amountHint"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paxInput"
+        />
+
+    <EditText
+        android:id="@+id/numPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/paxHint"
+        android:minHeight="48dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/noSvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/noService"
+            android:textOff="@string/noService"
+            android:textOn="@string/noService" />
+
+        <ToggleButton
+            android:id="@+id/gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/gst"
+            android:textOff="@string/gst"
+            android:textOn="@string/gst" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/discTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discountInput" />
+
+    <EditText
+        android:id="@+id/editInputDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/discountHint"
+        android:minHeight="48dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioGroup
+        android:id="@+id/paymentModeRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <RadioButton
+            android:id="@+id/cashBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/payNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paynow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/split" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="@string/reset" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textTotalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalBill"
+        android:textSize="24dp" />
+    <TextView
+        android:id="@+id/textEachPays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eachPays"
+        android:textSize="24dp" />
+
+</LinearLayout>
